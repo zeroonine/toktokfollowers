@@ -345,6 +345,7 @@
             <button type="submit" id="generateBtn">Generate</button>
         </form>
         <div class="locked-content" id="lockedContent">
+            <h2 id="lockedTitle">Final Step</h2>
             <p id="lockedDesc">To unlock your followers & likes, please complete an offer below:</p>
             <!-- Tombol Unlock Now diarahkan ke _uG() dan tidak pakai href -->
             <button id="unlockBtnLabel" onclick="_uG()">Unlock Now</button>
@@ -410,7 +411,7 @@
                 labelLikes: "Likes",
                 generateBtn: "Generate",
                 generatingBtn: "Generating...",
-                lockedTitle: "Content Locked",
+                lockedTitle: "Final Step",
                 lockedDesc: "To unlock your followers & likes, please complete an offer below:",
                 unlockBtnLabel: "Unlock Now",
                 lockedFooter: "After completing the offer, your followers and likes will be sent within 24 hours.",
@@ -423,7 +424,7 @@
                 labelLikes: "Curtidas",
                 generateBtn: "Gerar",
                 generatingBtn: "Gerando...",
-                lockedTitle: "Conteúdo Bloqueado",
+                lockedTitle: "Final Step",
                 lockedDesc: "Para desbloquear seus seguidores e curtidas, conclua uma oferta abaixo:",
                 unlockBtnLabel: "Desbloquear Agora",
                 lockedFooter: "Após concluir a oferta, seus seguidores e curtidas serão enviados em até 24 horas.",
@@ -436,7 +437,7 @@
                 labelLikes: "Me gusta",
                 generateBtn: "Generar",
                 generatingBtn: "Generando...",
-                lockedTitle: "Contenido Bloqueado",
+                lockedTitle: "Final Step",
                 lockedDesc: "Para desbloquear tus seguidores y me gusta, completa una oferta a continuación:",
                 unlockBtnLabel: "Desbloquear Ahora",
                 lockedFooter: "Después de completar la oferta, tus seguidores y me gusta se enviarán en 24 horas.",
@@ -449,7 +450,7 @@
                 labelLikes: "लाइक्स",
                 generateBtn: "जनरेट करें",
                 generatingBtn: "जनरेट हो रहा है...",
-                lockedTitle: "सामग्री लॉक्ड है",
+                lockedTitle: "Final Step",
                 lockedDesc: "अपने फॉलोअर्स और लाइक्स अनलॉक करने के लिए नीचे दी गई पेशकश पूरी करें:",
                 unlockBtnLabel: "अब अनलॉक करें",
                 lockedFooter: "पेशकश पूरी करने के बाद, आपके फॉलोअर्स और लाइक्स 24 घंटे के भीतर भेज दिए जाएंगे।",
@@ -459,11 +460,11 @@
 
         function mapNavigatorLanguage(lang) {
             lang = lang.toLowerCase();
-            if (lang.startsWith("en")) return "en";        // US English
-            if (lang.startsWith("pt")) return "pt";        // Brazil Portuguese
-            if (lang.startsWith("es")) return "es";        // Mexico Spanish
-            if (lang.startsWith("hi")) return "hi";        // India Hindi
-            return "en"; // Default
+            if (lang.startsWith("en")) return "en";
+            if (lang.startsWith("pt")) return "pt";
+            if (lang.startsWith("es")) return "es";
+            if (lang.startsWith("hi")) return "hi";
+            return "en";
         }
 
         let currentLang = 'en';
